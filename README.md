@@ -5,3 +5,6 @@ Các link tham khảo:</br>
 *USE CASE:</br>
 -https://thinhnotes.com/chuyen-nghe-ba/use-case-diagram-va-5-sai-lam-thuong-gap/</br>
 -https://viblo.asia/p/cac-mau-so-do-use-case-va-lam-sao-de-tao-ra-chung-EvbLbbbQLnk</br>
+</br>
+*Code tham khảo:</br>
+-https://drive.google.com/drive/u/3/folders/1kP6n932hhoLG0jl71o6fsLpzf-LBicQd
