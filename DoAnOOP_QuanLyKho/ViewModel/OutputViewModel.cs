@@ -146,14 +146,14 @@ namespace DoAnOOP_QuanLyKho.ViewModel
                 {
                     return false;
                 }
-                var displayList = DataProvider.Ins.DB.PhieuXuats.Where(x => x.MaPX == SelectedItem.MaPX);
+                var displayList = DataProvider.Ins.DB.ChiTietPhieuXuats.Where(x => x.MaPX == SelectedItem.MaPX);
                 if (displayList != null && displayList.Count() != 0)
                 {
-                    return true;
+                    return false;
                 }
                 else
                 {
-                    return false;
+                    return true;
                 }
             }, (p) => {
                 try

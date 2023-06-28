@@ -90,14 +90,14 @@ namespace DoAnOOP_QuanLyKho.ViewModel
                 {
                     return false;
                 }
-                var displayList = DataProvider.Ins.DB.DonViTinhs.Where(x => x.TenDV == DisplayName);
+                var displayList = DataProvider.Ins.DB.SanPhams.Where(x => x.MaDV == SelectedItem.MaDV);
                 if (displayList != null && displayList.Count() != 0)
                 {
-                    return true;
+                    return false;
                 }
                 else
                 {
-                    return false;
+                    return true;
                 }
             }, (p) => {
                 try

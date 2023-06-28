@@ -134,14 +134,14 @@ namespace DoAnOOP_QuanLyKho.ViewModel
                 {
                     return false;
                 }
-                var displayList = DataProvider.Ins.DB.NhaCungCaps.Where(x => x.TenNCC == DisplayName);
+                var displayList = DataProvider.Ins.DB.PhieuNhaps.Where(x => x.MaNCC == SelectedItem.MaNCC);
                 if (displayList != null && displayList.Count() != 0)
                 {
-                    return true;
+                    return false;
                 }
                 else
                 {
-                    return false;
+                    return true;
                 }
             }, (p) => {
                 try

@@ -129,15 +129,14 @@ namespace DoAnOOP_QuanLyKho.ViewModel
                 {
                     return false;
                 }
-                var displayList = DataProvider.Ins.DB.SanPhams.Where(x => x.TenSP == DisplayName);
-                if (displayList != null && displayList.Count() != 0)
-                {
-                    return true;
-                }
-                else
-                {
+                var outputInfosList = DataProvider.Ins.DB.ChiTietPhieuXuats.Where(x => x.MaSP == SelectedItem.MaSP);
+                var inputInfosList = DataProvider.Ins.DB.ChiTietPhieuNhaps.Where(x => x.MaSP == SelectedItem.MaSP);
+                if (outputInfosList != null && outputInfosList.Count() != 0)
                     return false;
-                }
+                if (inputInfosList != null && inputInfosList.Count() != 0)
+                    return false;
+                return true;
+
             }, (p) => {
                 try
                 {
